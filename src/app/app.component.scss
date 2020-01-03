@@ -1,19 +1,44 @@
 .parentSlider {
     height: 100vh;
     width: 100vw;
-    border: 5px solid red;
+
+    .directionControl {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .left {
+
+        }
+
+        .right {
+            float: right;
+        }
+
+        .arrow {
+            height: 65px;
+        }
+    }
+
+    .pageTitle {
+        text-align: center;
+        font-size: 100px;
+    }
+    .pageSubtitle {
+        text-align: center;
+    }
 
     .childPageOne {
         height: 100%;
         width: 100%;
         background: #2a95c7;
+    }
 
-        .pageOneTitle {
-            text-align: center;
-            font-size: 100px;
-        }
-        .pageOneSubtitle {
-            text-align: center;
-        }
+    .childPageTwo {
+        height: 100%;
+        width: 100%;
+        background: #2ac76b;
     }
 }

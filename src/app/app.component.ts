@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'profile2020';
 
+  page1: boolean;
+  page2: boolean;
+
   pageOneTitle = "Hi I'm Dave!"
+  pageTwoTitle = "Page 2"
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+    this.page1 = true;
+  }
 }
