@@ -11,17 +11,20 @@ export class AppComponent {
   page1: any;
   page2: any;
   page3: any;
+  page4: any;
 
   pageOneTitle = "Page 1"
   pageTwoTitle = "Page 2"
   pageThreeTitle = "Page 3"
+  pageFourTitle = "Page 4"
 
   currentIndex = 0
 
   array = [
     this.page1 = 0,
     this.page2 = 1,
-    this.page3 = 2
+    this.page3 = 2,
+    this.page4 = 3
 ]; 
 
   constructor() {
