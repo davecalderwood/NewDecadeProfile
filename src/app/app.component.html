@@ -3,21 +3,27 @@
   <div class="directionControl">
     <div class="left">
       <!-- go back -->
-      <img src="../assets/icons/arrow-left.svg" alt="arrow-left" class="arrow">
+      <button (click)="goPrevious()"><img src="../assets/icons/arrow-left.svg" alt="arrow-left" class="arrow"></button>
+      
     </div>
     <div class="right">
       <!-- go forward -->
-      <img src="../assets/icons/arrow-right.svg" alt="arrow-right" class="arrow">
+      <button (click)="goNext()"><img src="../assets/icons/arrow-right.svg" alt="arrow-right" class="arrow"></button>
     </div>
   </div>
 
-  <div class="childPageOne" *ngIf="page1">
+  <div class="childPageOne" *ngIf="currentIndex === 0">
     <div class="pageTitle">{{ pageOneTitle }}</div>
-    <div class="pageSubtitle">I am a software developer currently working in Tyson's, Virginia</div>
+    <div class="pageSubtitle">Page 1</div>
   </div>
 
-  <div class="childPageTwo" *ngIf="page2">
+  <div class="childPageTwo" *ngIf="currentIndex === 1">
     <div class="pageTitle">{{ pageTwoTitle }}</div>
     <div class="pageSubtitle">Page 2</div>
+  </div>
+
+  <div class="childPageThree" *ngIf="currentIndex === 2">
+    <div class="pageTitle">{{ pageThreeTitle }}</div>
+    <div class="pageSubtitle">Page 3</div>
   </div>
 </div>

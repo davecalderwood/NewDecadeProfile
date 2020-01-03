@@ -11,14 +11,15 @@
         align-items: center; 
         justify-content: space-between;
 
-        .left {
-        }
-
-        .right {
+        button {
+            background: transparent;
+            outline: none;
+            border: none;
         }
 
         .arrow {
             height: 65px;
+            cursor: pointer;
         }
     }
 
@@ -40,5 +41,11 @@
         height: 100%;
         width: 100%;
         background: #2ac76b;
+    }
+
+    .childPageThree {
+        height: 100%;
+        width: 100%;
+        background: #bcc72a;
     }
 }

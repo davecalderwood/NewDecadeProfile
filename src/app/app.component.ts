@@ -8,17 +8,46 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'profile2020';
 
-  page1: boolean;
-  page2: boolean;
+  page1: any;
+  page2: any;
+  page3: any;
 
-  pageOneTitle = "Hi I'm Dave!"
+  pageOneTitle = "Page 1"
   pageTwoTitle = "Page 2"
+  pageThreeTitle = "Page 3"
+
+  currentIndex = 0
+
+  array = [
+    this.page1 = 0,
+    this.page2 = 1,
+    this.page3 = 2
+]; 
 
   constructor() {
 
   }
 
   ngOnInit() {
-    this.page1 = true;
+    // this.page1 = true;
+  }
+
+  // for(i=0;i<10;i++)
+  goNext() {
+    if(this.currentIndex == this.array.length - 1){
+      this.currentIndex = 0
+    }
+    else{
+      this.currentIndex++;
+    }
+  }
+
+  goPrevious() {
+    if(this.currentIndex == 0){
+      this.currentIndex = this.array.length - 1;
+    }
+    else{
+      this.currentIndex--;
+    }
   }
 }
