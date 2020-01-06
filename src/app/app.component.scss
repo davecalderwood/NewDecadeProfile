@@ -23,12 +23,11 @@
         }
     }
 
-    .pageTitle {
-        text-align: center;
-        font-size: 100px;
-    }
-    .pageSubtitle {
-        text-align: center;
+    .page {
+        border: 1px solid black;
+        width: 85%;
+        margin: auto;
+        height: 100%;
     }
 
     .childPageOne {

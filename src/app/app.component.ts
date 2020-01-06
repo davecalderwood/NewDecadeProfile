@@ -13,11 +13,6 @@ export class AppComponent {
   page3: any;
   page4: any;
 
-  pageOneTitle = "Page 1"
-  pageTwoTitle = "Page 2"
-  pageThreeTitle = "Page 3"
-  pageFourTitle = "Page 4"
-
   currentIndex = 0
 
   array = [
