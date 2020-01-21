@@ -1,5 +1,4 @@
 .skills {
-  //   border: 1px solid black;
   margin-top: 25px;
   display: flex;
   flex-direction: column;
@@ -17,7 +16,6 @@
     width: 100%;
 
     .boxLeft {
-      //   border: 1px solid green;
       width: 150px;
       text-align: center;
       line-height: 150px;
@@ -27,7 +25,6 @@
     }
 
     .boxRight {
-      //   border: 1px solid blue;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -45,7 +42,6 @@
     margin-top: 25px;
 
     .boxLeft {
-      //   border: 1px solid orange;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -56,7 +52,6 @@
     }
 
     .boxRight {
-      //   border: 1px solid red;
       width: 150px;
       text-align: center;
       line-height: 150px;
@@ -69,7 +64,6 @@
   .skillCard {
     width: 100px;
     height: 50px;
-    // border: 1px solid black;
     border-radius: 5px;
     margin: 5px;
     background: rgb(231, 230, 230);
@@ -78,6 +72,13 @@
     -webkit-box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.35);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     p {
       margin: auto;

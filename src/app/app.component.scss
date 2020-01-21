@@ -11,6 +11,11 @@
     align-items: center;
     justify-content: space-between;
 
+    img {
+      position: relative;
+      z-index: 110;
+    }
+
     button {
       background: transparent;
       outline: none;
