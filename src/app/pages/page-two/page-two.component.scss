@@ -1,4 +1,7 @@
 .workHistory {
+  overflow: scroll;
+  position: relative;
+  z-index: 100;
 
   .title {
     text-align: center;

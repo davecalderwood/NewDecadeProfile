@@ -1,5 +1,7 @@
 .about {
-  overflow: auto;
+  overflow: scroll;
+  position: relative;
+  z-index: 100;
 
   .header {
     text-align: center;
