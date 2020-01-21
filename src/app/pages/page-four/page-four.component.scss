@@ -1,76 +1,81 @@
 .about {
-    overflow: auto;
+  overflow: auto;
 
-    .header {
-        text-align: center;
-        font-size: 30px;
-    }
+  .header {
+    text-align: center;
+    font-size: 30px;
+  }
 
-    .images {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        img {
-            padding: 10px;
-            width: 275px;
-            height: 300px;
-        }
-    }
-}
-.externalLinks {
+  .images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
-    .button {
-        width: 120px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin: 10px;
-        font-size: 20px;
-        border-radius: 10px;
-
-        -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.35);
-        -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.35);
-        box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.35);
-
-        &:active {
-            transform: translateY(2px);
-        }
+    img {
+      padding: 10px;
+      width: 275px;
+      height: 325px;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .github {
-        border: 1px solid darkblue;
-        background: blue;
-        z-index: 100;
-        position: relative;
+  }
+}
 
-        &:hover {
-            background: rgb(64, 64, 245);
-        }
-    }
-    .linkedin {
-        border: 1px solid orange;
-        background: darkorange;
-        z-index: 100;
-        position: relative;
+.externalLinks {
+  display: flex;
+  justify-content: center;
 
-        &:hover {
-            background: rgb(248, 175, 86);
-        }
-    }
-    .facebook {
-        border: 1px solid green;
-        background: darkgreen;
-        z-index: 100;
-        position: relative;
+  .button {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
 
-        &:hover {
-            background: rgb(42, 131, 42);
-        }
+    -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.35);
+
+    &:active {
+      transform: translateY(2px);
     }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .github {
+    border: 1px solid darkblue;
+    background: blue;
+    z-index: 100;
+    position: relative;
+
+    &:hover {
+      background: rgb(64, 64, 245);
+    }
+  }
+
+  .linkedin {
+    border: 1px solid orange;
+    background: darkorange;
+    z-index: 100;
+    position: relative;
+
+    &:hover {
+      background: rgb(248, 175, 86);
+    }
+  }
+
+  .facebook {
+    border: 1px solid green;
+    background: darkgreen;
+    z-index: 100;
+    position: relative;
+
+    &:hover {
+      background: rgb(42, 131, 42);
+    }
+  }
 }

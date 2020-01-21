@@ -1,7 +1,54 @@
 .contact {
 
-    a {
-        position: relative;
-        z-index: 100;
+  a {
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.skills {
+  border: 1px solid black;
+  margin-top: 25px;
+
+  .proficient {
+    display: flex;
+    height: 150px;
+    width: 100%;
+
+    .boxLeft {
+      border: 1px solid green;
+      width: 150px;
+      text-align: center;
+      line-height: 150px;
     }
+
+    .boxRight {
+      border: 1px solid blue;
+      width: 100%;
+    }
+  }
+
+  .familiar {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    margin-top: 25px;
+
+    .boxLeft {
+      border: 1px solid orange;
+      width: 100%;
+    }
+
+    .boxRight {
+      border: 1px solid red;
+      width: 150px;
+      text-align: center;
+      line-height: 150px;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
