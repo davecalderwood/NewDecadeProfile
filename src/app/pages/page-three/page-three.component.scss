@@ -7,48 +7,131 @@
 }
 
 .skills {
-  border: 1px solid black;
+  //   border: 1px solid black;
   margin-top: 25px;
 
   .proficient {
     display: flex;
-    height: 150px;
+    min-height: 150px;
     width: 100%;
 
     .boxLeft {
-      border: 1px solid green;
+      //   border: 1px solid green;
       width: 150px;
       text-align: center;
       line-height: 150px;
+      background: lightgray;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
     }
 
     .boxRight {
-      border: 1px solid blue;
+      //   border: 1px solid blue;
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background: rgb(209, 224, 230);
+      padding: 5px 0 5px 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
   }
 
   .familiar {
     display: flex;
-    height: 150px;
+    min-height: 150px;
     width: 100%;
     margin-top: 25px;
 
     .boxLeft {
-      border: 1px solid orange;
+      //   border: 1px solid orange;
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background: rgb(209, 224, 230);
+      padding: 5px 0 5px 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
     }
 
     .boxRight {
-      border: 1px solid red;
+      //   border: 1px solid red;
       width: 150px;
       text-align: center;
       line-height: 150px;
+      background: lightgray;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  .skillCard {
+    width: 100px;
+    height: 40px;
+    // border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    background: rgb(231, 230, 230);
+    display: table;
+
+    -webkit-box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.35);
+
+    p {
+      margin: auto;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
     }
   }
 
   .title {
     font-size: 20px;
     font-weight: bold;
+  }
+
+  .exp {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .proficient {
+    display: flex;
+    flex-direction: column;
+
+    .boxLeft {
+      width: 100% !important;
+      line-height: 0;
+      height: 50px !important;
+      line-height: 50px !important;
+      border-radius: 0px !important;
+    }
+
+    .boxRight {
+      justify-content: center;
+      border-radius: 0px !important;
+    }
+  }
+
+  .familiar {
+    display: flex;
+    flex-direction: column;
+
+    .boxRight {
+      width: 100% !important;
+      order: 1;
+      height: 50px !important;
+      line-height: 50px !important;
+      border-radius: 0px !important;
+    }
+
+    .boxLeft {
+      order: 2;
+      justify-content: center;
+      border-radius: 0px !important;
+    }
   }
 }
