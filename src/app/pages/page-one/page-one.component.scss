@@ -1,39 +1,86 @@
 .page {
-  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-  .header {
-    position: absolute;
-    top: 30%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    text-transform: uppercase;
-    font-family: verdana;
-    font-size: 6em;
-    font-weight: 700;
-    color: #f5f5f5;
-    text-shadow: 1px 1px 1px #919191,
-      1px 2px 1px #919191,
-      1px 3px 1px #919191,
-      1px 4px 1px #919191,
-      1px 5px 1px #919191,
-      1px 6px 1px #919191,
-      1px 7px 1px #919191,
-      1px 8px 1px #919191,
-      1px 9px 1px #919191,
-      1px 10px 1px #919191,
-      1px 18px 6px rgba(16, 16, 16, 0.4),
-      1px 22px 10px rgba(16, 16, 16, 0.2),
-      1px 25px 35px rgba(16, 16, 16, 0.2),
-      1px 30px 60px rgba(16, 16, 16, 0.4);
+  .hello {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    padding-top: 40px;
   }
 
-  .position {
-    position: absolute;
-    top: 55%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    text-transform: uppercase;
-    font-family: verdana;
-    font-size: 1.5em;
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    border: 2px solid yellow;
+
+    //   .externalLinks {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     border-top: 2px solid white;
+    //     justify-content: space-evenly;
+    //     width: 60%;
+
+    //     a {
+    //       color: white;
+    //       text-decoration: none;
+    //       position: relative;
+    //       z-index: 100;
+    //       padding: 20px;
+    //       font-size: 24px;
+    //     }
+
+    //     .github {
+    //       &:hover {
+    //         color: red;
+    //       }
+
+    //       &:active {
+    //         transform: translateY(2px);
+    //       }
+    //     }
+
+    //     .linkedin {
+    //       &:hover {
+    //         color: blue;
+    //       }
+
+    //       &:active {
+    //         transform: translateY(2px);
+    //       }
+    //     }
+
+    //     .facebook {
+    //       &:hover {
+    //         color: rgb(140, 128, 245);
+    //       }
+
+    //       &:active {
+    //         transform: translateY(2px);
+    //       }
+    //     }
+    //   }
+
+    //   .contact {
+    //     flex-wrap: wrap;
+    //     border-top: 2px solid white;
+    //     color: white;
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     position: relative;
+    //     z-index: 100;
+    //     padding: 20px;
+    //     font-size: 24px;
+    //     width: 100%;
+    //   }
   }
 }
